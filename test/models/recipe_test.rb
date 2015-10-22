@@ -1,6 +1,6 @@
 require "test_helper"
 
-class Recipe < ActiveSupport::TestCase
+class RecipeTest < ActiveSupport::TestCase
    
     def setup
        @recipe = Recipe.new(name: "chicken parm", summary: "This is the best chicken parm recipe ever",
