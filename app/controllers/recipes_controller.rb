@@ -15,7 +15,7 @@ class RecipesController < ApplicationController
 
     def create
         @recipe = Recipe.new(recipe_params)
-        @recipe.chef = Chef.find(2)
+        @recipe.chef = Chef.find(recipe_id)
         
         if @recipe.save
             flash[:success] = "Your recipe was created sucessfully!"

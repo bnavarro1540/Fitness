@@ -5,9 +5,10 @@
         
         <div class="col-md-2">
             <section class="chef_info center">
-            <%= gravatar_for recipe.chef, size:100 %>
-            <h5>Chef Name: <%= recipe.chef.chefname %></h5>
-                
+                <% if recipe.chef %>
+            <%= gravatar_for recipe.chef, size: 100 %>
+                <% end %>
+            <h5>Chef Name: <%= recipe.chef %></h5>
             </section>
         </div>
         
